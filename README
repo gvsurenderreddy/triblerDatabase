@@ -1,0 +1,18 @@
+triblerDB v20150416 - John Moran (john@jtmoran.com)
+
+triblerDB parses the "tribler.sdb" SQLite database used by the Tribler 
+P2P application and displays all torrent files downloaded and searches
+performed by the user.
+
+Output is two files, "tribler_downloads.csv" and "tribler_searches.csv".
+
+This script is has been tested up to Tribler v6.4.
+
+If you receive an error stating that the file is encrypted or not a 
+database, make sure the version of the sqlite3.dll file in your Python
+DLLs directory is from the most current version of SQLite.
+
+Options:
+  
+   -f, --file           Path to the tribler.sdb file
+   -o, --output         Output directory (Default: current directory)
